@@ -86,8 +86,18 @@
       <span class="section-label">La salle vous attend</span>
       <h2 class="section-heading" id="rsvp-title">Votre présence est un baume.</h2>
       <p class="rsvp-intro">(Contrairement aux applications de rencontre.)</p>
-      <button class="rsvp-button" id="rsvp-button" type="button">Je viens soutenir Marine 🍾</button>
+      <form class="rsvp-form" id="rsvp-form">
+        <label class="rsvp-field">Votre nom de héros ou d'héroïne
+          <input id="guest-name" name="guest-name" type="text" maxlength="60" autocomplete="name" placeholder="Ex. Camille Dupont" required>
+        </label>
+        <label class="rsvp-field">Nombre de personnes (vous compris)
+          <input id="guest-count" name="guest-count" type="number" min="1" value="1" required>
+        </label>
+        <button class="rsvp-button" type="submit">Je confirme ma présence 🍾</button>
+      </form>
+      <p class="rsvp-note">Le billet est créé ici, sur votre appareil : aucune donnée n'est envoyée ni enregistrée en ligne.</p>
       <p class="thanks" id="thanks" aria-live="polite"></p>
+      <a class="rsvp-button ticket-download" id="ticket-download" hidden download="billet-anniversaire-marine.pdf">Télécharger mon billet PDF 🎟️</a>
       <button class="candle-action" id="candle-button" type="button"><span aria-hidden="true">🕯️</span> Allumer un cierge pour Marine <span class="candle-count" id="candle-count" aria-live="polite">0</span></button>
       <div class="elapsed"><span>Depuis le début de la traversée</span><strong id="elapsed-count">730 jours</strong><span>et toujours debout</span></div>
       <div class="tiny-cake" aria-label="Petit gâteau avec deux bougies"><span class="cake-illustration" aria-hidden="true"><span class="cake-candles"><i></i><i></i></span><span class="cake-icing"></span><span class="cake-body"></span><span class="cake-plate"></span></span><span class="tiny-cake-label">Deux bougies. Zéro prétendant.</span></div>
